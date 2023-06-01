@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { PRODUCTOS } from "../../productos";
+import productos from "../../assets/img/productos.json";
 import Producto from "./Productos";
 import "./shop.css";
 
@@ -7,10 +7,10 @@ function Tienda() {
   return (
     <div className="tienda">
       <div className="tiendaTitle">
-        <h1> Tienda de muebles </h1>
+        <h1> DecoMuebles </h1>
       </div>
       <div className="productosEs">
-        {PRODUCTOS.map((producto) => (
+        {productos.map((producto) => (
           <Producto key={producto.id} data={producto} />
         ))}
       </div>

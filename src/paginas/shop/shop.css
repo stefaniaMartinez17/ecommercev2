@@ -1,27 +1,50 @@
+body {
+  background-color: #bfab9984;
+}
+
 .tiendaTitle {
-  margin-top: 100px;
+  margin-top: 50px;
   text-align: center;
-  font-size: 15px;
-  color: rgb(128, 114, 135);
+  font-size: 25px;
+  color: #4f5902;
+  margin-bottom: 50px;
 }
 .productosEs {
   width: 100%;
   height: auto;
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .productoCu {
-  width: 300px;
-  height: 200px;
-  margin: 100px;
+  width: auto;
+  height: auto;
+  margin: 20px;
+  padding: 0px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  text-transform: capitalize;
+
+  border-radius: 10%;
+}
+
+.descripciónProd p {
+  padding: 5px;
+}
+
+.descripciónProd p btn_agregar {
+  background-color: antiquewhite;
 }
 
 .productoCu img {
   width: 200px;
+  height: 200px;
+  border: 10px;
+  border-radius: 10px 10px 0 0;
 }
 .btn_agregar {
   background-color: transparent;

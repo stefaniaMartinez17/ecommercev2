@@ -1,5 +1,5 @@
 import { createContext, useEffect, useState } from "react";
-import { PRODUCTOS } from "../productos";
+import productos from "../assets/img/productos.json";
 
 export const ShopContext = createContext(null);
 
@@ -8,7 +8,7 @@ export const ShopContext = createContext(null);
 }
 const inicialStateItems = () => {
   let cart = {};
-  for (let i = 1; i < PRODUCTOS.length + 1; i++) {
+  for (let i = 0; i < productos.length; i++) {
     cart[i] = 0;
   }
   return cart;
@@ -36,7 +36,7 @@ export const ShopContextProvider = ({ children }) => {
     let totalAmount = 0;
     for (const item in cartItems) {
       if (cartItems[item] > 0) {
-        let itemInfo = PRODUCTOS.find((product) => product.id === Number(item));
+        let itemInfo = productos.find((product) => product.id === Number(item));
         totalAmount += cartItems[item] * itemInfo.precio;
       }
     }

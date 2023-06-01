@@ -10,7 +10,7 @@ const LoginButton = () => {
     <div>
       <div className="banner">
         <div className="banner__text">
-          <h1> TIENDA DE MUEBLES </h1>
+          <h1> DECOMUEBLES </h1>
           <h2> Bienvenido </h2>
           <p>
             Nos complace darte la bienvenida a nuestra tienda de muebles, donde
