@@ -1,9 +1,9 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import ReactDOM from "react-dom/client";
 import Inicio from "./Login/Inicio";
 import { Auth0Provider } from "@auth0/auth0-react";
 
-ReactDOM.render(
+ReactDOM.createRoot(document.getElementById("root")).render(
   <Auth0Provider
     domain="dev-3yy0ueoklmwzve8u.us.auth0.com"
     clientId="IdXKE0B1Q4MuaYjv3CQjj8LW5yIUy96l"
@@ -12,6 +12,5 @@ ReactDOM.render(
     }}
   >
     <Inicio />
-  </Auth0Provider>,
-  document.getElementById("root")
+  </Auth0Provider>
 );
