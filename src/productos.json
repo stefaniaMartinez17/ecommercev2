@@ -3,49 +3,49 @@
       "id": 1,
       "nombre": "Silla Madera",
       "precio":90000,
-      "imagen": "./silla_1.jpg"
+      "imagen": "./../public/img/silla_1.jpg"
     },
     {
         "id": 2,
       "nombre": "Silla  Moderna",
       "precio": 120000,
-      "imagen":"./silla_2.jpg"
+      "imagen":"./../public/img/silla_2.jpg"
     },
     {
         "id": 3,
       "nombre": "Silla Tradicional ",
       "precio": 45000,
-      "imagen":"./silla_3.jpg"
+      "imagen":"./../public/img/silla_3.jpg"
     },
     {
         "id": 4,
     "nombre": "Sofá Moderno Amarillo",
     "precio": 350000,
-    "imagen": "./sofa_1.jpg"
+    "imagen": "./../public/img/sofa_1.jpg"
     },
     {
         "id": 5,
       "nombre": "Sofá Gris",
       "precio": 1300000,
-      "imagen": "./sofa_2.jpg"
+      "imagen": "./../public/img/sofa_2.jpg"
     },
     {
         "id": 6,
     "nombre": "Sofá Terciopelo Verde",
     "precio": 350000,
-    "imagen":"./sofa_3.jpg"
+    "imagen":"./../public/img/sofa_3.jpg"
     },
     {
         "id": 7,
     "nombre": "Sofá Cuero Café",
     "precio": 35000,
-    "imagen":"./sofa_4.jpg"
+    "imagen":"./../public/img/sofa_4.jpg"
     },
     {
         "id": 8,
     "nombre": "Sofá Terciopelo Azul",
     "precio": 35000,
-    "imagen":"./sofa_5.jpg"
+    "imagen":"./../public/img/sofa_5.jpg"
     }
     
 ]

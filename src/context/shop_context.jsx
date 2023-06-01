@@ -1,11 +1,8 @@
 import { createContext, useEffect, useState } from "react";
-import productos from "../assets/img/productos.json";
+import productos from "../productos.json";
 
 export const ShopContext = createContext(null);
 
-{
-  /*how many items with this id there are in the cart*/
-}
 const inicialStateItems = () => {
   let cart = {};
   for (let i = 0; i < productos.length; i++) {
@@ -13,10 +10,6 @@ const inicialStateItems = () => {
   }
   return cart;
 };
-
-{
-  /*componente proveedor del contexto*/
-}
 
 export const ShopContextProvider = ({ children }) => {
   const [cartItems, setCartItems] = useState(() => {
@@ -40,7 +33,7 @@ export const ShopContextProvider = ({ children }) => {
         totalAmount += cartItems[item] * itemInfo.precio;
       }
     }
-    return totalAmount.toLocaleString("es-CO");
+    return totalAmount;
   };
 
   const addToCart = (itemId) => {

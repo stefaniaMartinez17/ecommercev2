@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import productos from "../../assets/img/productos.json";
+import productos from "../../productos.json";
 import { ShopContext } from "../../context/shop_context";
 import { CartItem } from "./CartItem";
 import { useNavigate } from "react-router-dom";
@@ -22,21 +22,18 @@ export const Carrito = () => {
           }
         })}
       </div>
+
       {totalAmount > 0 ? (
         <div className="checkout">
-          <p> Total a Pagar: ${totalAmount} Pesos </p>
-          <button onClick={() => navigate("/shop")}>
-            {" "}
-            continuar comprado{" "}
-          </button>
+          <p> Total a Pagar: ${totalAmount.toLocaleString("es-CO")} Pesos </p>
+          <button onClick={() => navigate("/")}>continuar comprado</button>
           <button
             onClick={() => {
               checkout();
               navigate("/checkout");
             }}
           >
-            {" "}
-            Comprar Ahora{" "}
+            Comprar Ahora
           </button>
         </div>
       ) : (

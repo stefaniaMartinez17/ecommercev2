@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import productos from "../../assets/img/productos.json";
+import productos from "../../productos.json";
 import Producto from "./Productos";
 import "./shop.css";
 

@@ -3,23 +3,17 @@ import { Navbar } from "./componentes/Navbar";
 import Tienda from "./paginas/shop/shop";
 import { Carrito } from "./paginas/cart/cart";
 import { ShopContextProvider } from "./context/shop_context";
+import Inicio from "./Login/Inicio";
+import Autenticado from "./Login/Autenticado";
+import { useAuth0 } from "@auth0/auth0-react";
 
 function App() {
-  return (
-    <div>
-      <ShopContextProvider>
-        <Router>
-          {/*Va a estar en todas las rutas*/}
-          <Navbar />
-          <Routes>
-            {/* lo que pongas aquí depende de la ruta en la que estés*/}
-            <Route path="/shop" Component={Tienda} />
-            <Route path="/cart" Component={Carrito} />
-          </Routes>
-        </Router>
-      </ShopContextProvider>
-    </div>
-  );
-}
+  const { isAuthenticated } = useAuth0();
 
+  if (isAuthenticated) {
+    return <Autenticado />;
+  } else {
+    return <Inicio />;
+  }
+}
 export default App;
