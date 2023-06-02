@@ -1,10 +1,20 @@
-import React from "react";
+import { useState, useNavigate } from "react";
 import { useAuth0 } from "@auth0/auth0-react";
 import "./inicio.css";
 import Profile from "./UserProf";
+import { Admin } from "../paginas/Admin/Admin";
 
 const LoginButton = () => {
   const { loginWithRedirect } = useAuth0();
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate("/Admin");
+  };
+
+  if (redirectToComponent) {
+    return <Navigate to="/Admin" />;
+  }
 
   return (
     <div>
@@ -20,6 +30,10 @@ const LoginButton = () => {
           <button className="BtnLogin" onClick={() => loginWithRedirect()}>
             Log In
           </button>
+
+          <div>
+            <button onClick={handleClick}>Ir a Nuevo Componente</button>
+          </div>
         </div>
       </div>
       <Profile />

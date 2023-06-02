@@ -17,7 +17,6 @@ function Autenticado() {
             <Route path="/shop" Component={Tienda} />
             <Route path="/cart" Component={Carrito} />
           </Routes>
-          <Tienda />
         </Router>
       </ShopContextProvider>
     </div>
