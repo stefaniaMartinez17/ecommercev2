@@ -6,15 +6,6 @@ import { Admin } from "../paginas/Admin/Admin";
 
 const LoginButton = () => {
   const { loginWithRedirect } = useAuth0();
-  const navigate = useNavigate();
-
-  const handleClick = () => {
-    navigate("/Admin");
-  };
-
-  if (redirectToComponent) {
-    return <Navigate to="/Admin" />;
-  }
 
   return (
     <div>
@@ -30,10 +21,6 @@ const LoginButton = () => {
           <button className="BtnLogin" onClick={() => loginWithRedirect()}>
             Log In
           </button>
-
-          <div>
-            <button onClick={handleClick}>Ir a Nuevo Componente</button>
-          </div>
         </div>
       </div>
       <Profile />
