@@ -1,5 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 export const Admin = () => {
   const [correo, setCorreo] = useState("");
@@ -7,6 +8,7 @@ export const Admin = () => {
   const [envioExitoso, setEnvioExitoso] = useState(false);
   const [mostrarErrores, setMostrarErrores] = useState(false);
   const [errores, setErrores] = useState([]);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const usuario = () => {
@@ -82,7 +84,9 @@ export const Admin = () => {
           </ul>
         </div>
       )}
-      {envioExitoso && <div className="message">INGRESO A ADMIN</div>}
+      {envioExitoso && navigate("/cart") && (
+        <div className="message">INGRESO A ADMIN</div>
+      )}
     </div>
   );
 };
