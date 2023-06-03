@@ -38,13 +38,10 @@ export const Admin = () => {
 
     if (
       errores.length === 0 &&
-      correo.trim() !== "admin@gmail.com" &&
-      password.trim() !== "Hola123"
+      correo.trim() === "admin@gmail.com" &&
+      password.trim() === "Hola123"
     ) {
       setEnvioExitoso(true);
-      setTimeout(() => {
-        setEnvioExitoso(false);
-      }, 3000);
     }
   };
 
