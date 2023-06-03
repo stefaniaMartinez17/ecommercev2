@@ -4,6 +4,7 @@ import Tienda from "./../paginas/shop/shop";
 import { Carrito } from "./../paginas/cart/cart";
 import { ShopContextProvider } from "./../context/shop_context";
 import { useAuth0 } from "@auth0/auth0-react";
+import { Admin } from "../paginas/Admin/Admin";
 
 function Autenticado() {
   return (
@@ -16,6 +17,7 @@ function Autenticado() {
             {/* lo que pongas aquí depende de la ruta en la que estés*/}
             <Route path="/shop" Component={Tienda} />
             <Route path="/cart" Component={Carrito} />
+            <Route path="/admin" Component={Admin} />
           </Routes>
         </Router>
       </ShopContextProvider>

@@ -1,8 +1,8 @@
 import { useState, useNavigate } from "react";
 import { useAuth0 } from "@auth0/auth0-react";
 import "./inicio.css";
-import Profile from "./UserProf";
 import { Admin } from "../paginas/Admin/Admin";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 
 const LoginButton = () => {
   const { loginWithRedirect } = useAuth0();
@@ -23,7 +23,6 @@ const LoginButton = () => {
           </button>
         </div>
       </div>
-      <Profile />
     </div>
   );
 };

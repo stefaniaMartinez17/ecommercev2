@@ -26,7 +26,7 @@ export const Carrito = () => {
       {totalAmount > 0 ? (
         <div className="checkout">
           <p> Total a Pagar: ${totalAmount.toLocaleString("es-CO")} Pesos </p>
-          <button onClick={() => navigate("/")}>continuar comprado</button>
+          <button onClick={() => navigate("/shop")}>continuar comprado</button>
           <button
             onClick={() => {
               checkout();
