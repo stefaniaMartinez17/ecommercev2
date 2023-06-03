@@ -84,7 +84,7 @@ export const Admin = () => {
           </ul>
         </div>
       )}
-      {envioExitoso && navigate("/cart") && (
+      {envioExitoso && navigate("/funcionesAdm") && (
         <div className="message">INGRESO A ADMIN</div>
       )}
     </div>

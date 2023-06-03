@@ -31,16 +31,15 @@
 }
 
 .banner__text h1 {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  font-size: 40px;
+  font-family: "IM Fell French Canon", serif;
+  font-size: 60px;
   color: #0fc2c0;
   margin-bottom: 30px;
 }
 
 .banner__text h2 {
-  font-family: "Merriweather", serif;
-  font-size: 70px;
+  font-family: "IM Fell French Canon", serif;
+  font-size: 50px;
   color: #ffffff;
   margin-bottom: 50px;
 }
