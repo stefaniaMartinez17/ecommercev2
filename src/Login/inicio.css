@@ -33,7 +33,7 @@
 .banner__text h1 {
   font-family: "IM Fell French Canon", serif;
   font-size: 60px;
-  color: #0fc2c0;
+  color: #94bdf2;
   margin-bottom: 30px;
 }
 
@@ -53,19 +53,19 @@
 
 .BtnLogin {
   text-decoration: none;
-  color: rgb(255, 255, 255);
+  color: rgb(16, 9, 56);
   font-size: 15px;
   text-transform: uppercase;
-  background-color: #008f8c;
+  background-color: #94bdf2;
   padding: 15px 20px;
   display: inline-block;
   margin-top: 20px;
   border-radius: 24px;
-  border: 2px solid #ffffff;
+  border: 2px solid #0b2546;
   transition: all 0.4s;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 20px rgba(57, 40, 40, 0.3);
 }
 
 .BtnLogin:hover {
-  background-color: #0fc2c0;
+  background-color: #5c9df2;
 }

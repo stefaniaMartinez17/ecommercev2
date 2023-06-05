@@ -1,6 +1,7 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import "./Admin.css";
 
 export const Admin = () => {
   const [correo, setCorreo] = useState("");
@@ -44,15 +45,20 @@ export const Admin = () => {
       password.trim() === "Hola123"
     ) {
       setEnvioExitoso(true);
+      setTimeout(() => {
+        setEnvioExitoso(false);
+      }, 3000);
     }
   };
 
   return (
     <div>
-      <form onSubmit={enviarFormulario}>
+      <form className="loginFormulario" onSubmit={enviarFormulario}>
+        <h2>Ingresa tu usuario Administrador</h2>
         <div className="inputContainer">
           <label htmlFor="nombre">Correo: </label>
           <input
+            className="correo1"
             type="email"
             id="correo"
             value={correo}
@@ -64,6 +70,7 @@ export const Admin = () => {
         <div className="inputContainer">
           <label htmlFor="">Contraseña: </label>
           <input
+            className="password1"
             type="password"
             id="password"
             value={password}
@@ -74,6 +81,7 @@ export const Admin = () => {
         </div>
         <button type="submit"> Iniciar</button>
       </form>
+
       {mostrarErrores && errores.length > 0 && (
         <div className="errors">
           <h3> Errores : </h3>

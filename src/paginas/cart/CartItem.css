@@ -6,15 +6,16 @@
   text-align: center;
   width: 100%;
   text-transform: capitalize;
-  margin-top: 20px;
+  margin-top: 50px;
+  background-color: white;
 }
 
 .carrito h2 {
   margin-top: 50px;
   text-align: center;
-  font-size: 25px;
-  color: #4f5902;
-  margin-bottom: 50px;
+  font-size: 35px;
+  color: #5c9df2;
+  margin-bottom: 40px;
 }
 
 .itemsCarrito {
@@ -23,22 +24,18 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+  background-color: white;
 }
 
 .cartItem {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
-  width: 350px;
+  width: 330px;
   height: 150px;
-  background-color: rgba(255, 255, 255, 0.961);
+  background-color: white;
   border-radius: 5%;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-}
-
-.cartItem:hover {
-  transform: translateX(5px);
-  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .cartItem img {
@@ -46,12 +43,13 @@
   height: 150px;
   margin-right: 20px;
   border-radius: 5px;
+  object-fit: fill;
 }
 
 .descripciónCart {
   display: flex;
   flex-direction: column;
-  background-color: #4f5902;
+  background-color: white;
 }
 
 .descripciónCart p {
@@ -64,6 +62,7 @@
   display: flex;
   align-items: center;
   margin-top: 10px;
+  background-color: white;
 }
 
 .AñadirOEliminar button {
@@ -72,6 +71,7 @@
   font-size: 16px;
   padding: 0 10px;
   cursor: pointer;
+  background-color: white;
 }
 
 .AñadirOEliminar input {

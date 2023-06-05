@@ -2,14 +2,52 @@ body {
   background-color: #ffffff84;
 }
 
-.tiendaTitle {
-  margin-top: 50px;
+.Shop_Banner {
+  display: grid;
+  height: 350px;
+  width: 100%;
+  place-items: center;
   text-align: center;
-  font-size: 25px;
-  color: #4f5902;
-  margin-bottom: 50px;
+  background-image: url(../../../public//img/ShopBanner.jpg);
+  background-size: cover;
+  background-position: center center;
+  position: relative;
 }
+.tiendaTitle {
+  margin-top: 20px;
+  width: 500px;
+  margin-left: 500px;
+  text-align: justify;
+  font-size: 25px;
+  color: #5c9df2;
+  margin-bottom: 50px;
+  z-index: 100;
+  font-family: "IM Fell French Canon", serif;
+}
+.tiendaDesc {
+  width: 500px;
+  margin-top: -130px;
+  margin-left: 500px;
+  text-align: left;
+  font-size: 20px;
+  color: #ffffff;
+  margin-bottom: 50px;
+  z-index: 100;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.Shop_Banner::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.509);
+}
+
 .productosEs {
+  margin-top: 50px;
   width: 100%;
   height: auto;
   display: flex;
@@ -29,20 +67,17 @@ body {
   text-align: center;
   text-transform: capitalize;
   border-radius: 10%;
-  background-color: #e8f39a;
+  background-color: #f2f2f2;
 }
 
 .productoCu:hover {
   transform: translateX(5px);
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: #5c9df2;
+  color: #070707;
 }
 
 .descripciónProd p {
   padding: 5px;
-}
-
-.descripciónProd p btn_agregar {
-  background-color: antiquewhite;
 }
 
 .productoCu img {
@@ -52,12 +87,18 @@ body {
   border-radius: 10px 10px 0 0;
 }
 .btn_agregar {
-  background-color: transparent;
-  border: 2px solid rgb(19, 19, 19);
+  border: 1px solid#0d203684;
   min-width: 100px;
   padding-left: 10px;
   padding-right: 10px;
   padding-top: 5px;
   padding-bottom: 5px;
   border-radius: 15px;
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+}
+
+.btn_agregar:hover {
+  background-color: #0d203684;
+  color: #f2f2f2;
 }

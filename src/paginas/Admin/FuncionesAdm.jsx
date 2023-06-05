@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import database from "../../productos.json";
+import "./Admin.css";
 
 function FuncionesAdm() {
   const [data, setData] = useState([]);
@@ -32,14 +33,16 @@ function FuncionesAdm() {
 
   return (
     <>
-      <h1>Ecommerce</h1>
+      <h2 className="funciontitulo">Acceso a Productos</h2>
       {data.map((item) => (
-        <div key={item.id}>
-          <p>ID: {item.id}</p>
-          <p>Nombre: {item.nombre}</p>
-          <p>Precio: {item.precio}</p>
+        <div className="administrar" key={item.id}>
+          <div className="Datos1">
+            <p>ID: {item.id}</p>
+            <p>Nombre: {item.nombre}</p>
+            <p>Precio: {item.precio}</p>
+          </div>
           <img src={item.imagen} alt={item.nombre} />
-          <form>
+          <form className="FormAdmin">
             <input
               type="text"
               value={nombre}

@@ -33,7 +33,7 @@ export const Carrito = () => {
               navigate("/checkout");
             }}
           >
-            Comprar Ahora
+            Vaciar carrito
           </button>
         </div>
       ) : (

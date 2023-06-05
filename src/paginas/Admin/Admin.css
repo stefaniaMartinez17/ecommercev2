@@ -1,0 +1,66 @@
+.loginFormulario {
+  text-align: center;
+  margin: 100px;
+  margin-left: 200px;
+  margin-right: 200px;
+  padding-top: 10px;
+  padding-bottom: 25px;
+  background-color: rgb(180, 180, 180);
+  border-style: outset;
+  z-index: 1;
+}
+.loginFormulario h2 {
+  padding: 30px;
+}
+label {
+  font-size: 20px;
+}
+input {
+  padding-right: 40px;
+  margin: 5px;
+  border-color: black;
+  font-size: 20px;
+}
+input:hover {
+  background-color: rgba(42, 73, 246, 0.14);
+}
+
+.correo1 {
+  margin-left: 39px;
+}
+.loginFormulario button {
+  margin-top: 15px;
+  padding: 8px;
+  border-radius: 10px;
+}
+form button:hover {
+  background-color: rgba(0, 255, 255, 0.233);
+}
+
+.administrar img {
+  width: 200px;
+  height: 200px;
+}
+.administrar {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  border-style: double;
+  padding: 20px;
+  margin: 10px;
+  background-color: #94bdf2;
+}
+.funciontitulo {
+  padding: 60px;
+  text-align: center;
+  font-size: 35px;
+}
+.Datos1 {
+  width: 170px;
+  padding-top: 40px;
+  font-size: 25px;
+}
+
+.FormAdmin {
+  padding-top: 60px;
+}
