@@ -1,17 +1,36 @@
 /* Navbar.css */
 
 .navbar {
-  background-color: #1e6fd9;
+  background-color: #5c9df2;
   padding: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 45px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.logo img {
+  max-width: 50px;
+  max-height: 50px;
+  z-index: 230;
+  padding-left: 50px;
+}
+
+.logo {
+  display: flex;
+}
+.logo p {
+  padding-top: 10px;
+  font-size: 23px;
+  font-family: "Times New Roman", Times, serif;
+  padding-left: 10px;
 }
 
 .links {
   display: flex;
   gap: 10px;
+  padding-left: 650px;
 }
 
 .links a {
@@ -20,7 +39,9 @@
   font-weight: bold;
   font-size: 20px;
   padding: 5px;
+  justify-content: space-between;
   border-radius: 5px;
+  margin-right: 50px;
   transition: background-color 0.3s ease;
 }
 
@@ -38,6 +59,28 @@
   transition: background-color 0.3s ease;
 }
 
+.navbar button {
+  background-color: #ffffff;
+  color: #000000;
+  border: none;
+  border-radius: 10%;
+  padding: 10px;
+  width: 70px;
+  margin-right: 50px;
+  cursor: pointer;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  transition: background-color 0.3s ease;
+}
+
 .button-login:hover {
   background-color: #0056b3;
+}
+
+footer {
+  background-color: #5c9df2;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  color: #fff;
+  padding: 10px;
 }

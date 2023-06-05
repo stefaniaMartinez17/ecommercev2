@@ -82,3 +82,21 @@
   border-radius: 5px;
   margin: 0 10px;
 }
+
+.checkout {
+  padding: 15px;
+}
+
+.checkout button {
+  padding: 8px;
+  margin-top: 15px;
+  margin-left: 20px;
+  background-color: rgb(234, 233, 233);
+  border-radius: 10px;
+  border: 1.7px solid #17273b;
+}
+
+.checkout button:hover {
+  background-color: #5c9df2;
+  font-size: 15px;
+}
